@@ -130,7 +130,8 @@ async def sozlama(callback:CallbackQuery, state: FSMContext):
     city_name = data.get("city_name")
     weather = get_weather(city_name)
 
-    response = (f"Bugun, {weather['date']}\n\n"
+    response = (f"Shahar : {city_name}\n"
+                f"Bugun, {weather['date']}\n\n"
                 f"Hozir: ☀️ +{weather['current_temp']}°, ↖️ {weather['wind_speed']:.1f} m/s\n\n"
                 f"Tong: {weather['day_forecast']['Tong']}\n"
                 f"Kun: {weather['day_forecast']['Kun']}\n"
@@ -150,6 +151,7 @@ async def orqaga(callback: CallbackQuery, state: FSMContext):
     data = await state.get_data()
     city_name = data.get("city_name")
     forecast_output = get_weather_forecast(city_name)
+    forecast_output = f"Shahar: {city_name}\n" + forecast_output
     await callback.message.answer(forecast_output, reply_markup=sozlamalar)
 
 @dp.callback_query(F.data=="sozlamalar")

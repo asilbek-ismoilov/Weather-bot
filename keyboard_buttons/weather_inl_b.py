@@ -2,20 +2,20 @@ from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 weather_inl_button = InlineKeyboardMarkup(
     inline_keyboard=[
-        [InlineKeyboardButton(text="Tashkent", callback_data="Tashkent"), InlineKeyboardButton(text="Buxoro", callback_data="Bukhara")],
-        [InlineKeyboardButton(text="Navoi", callback_data="Navoi"), InlineKeyboardButton(text="Sirdaryo", callback_data="Sirdaryo")],
+        [InlineKeyboardButton(text="Toshkent", callback_data="Tashkent"), InlineKeyboardButton(text="Buxoro", callback_data="Bukhara")],
+        [InlineKeyboardButton(text="Navoiy", callback_data="Navoi"), InlineKeyboardButton(text="Sirdaryo", callback_data="Sirdaryo")],
         [InlineKeyboardButton(text="Samarqand", callback_data="Samarkand"), InlineKeyboardButton(text="Farg'ona", callback_data="Fergana")],
         [InlineKeyboardButton(text="Namangan", callback_data="Namangan"), InlineKeyboardButton(text="Andijon", callback_data="Andijan")],
         [InlineKeyboardButton(text="Jizzah", callback_data="Jizzakh"), InlineKeyboardButton(text="Urganch", callback_data="Urgench")],
         [InlineKeyboardButton(text="Nukus", callback_data="Nukus"), InlineKeyboardButton(text="Termiz", callback_data="Termiz")],
-        [InlineKeyboardButton(text="Zarafshon", callback_data="Zarafshan"), InlineKeyboardButton(text="Hiva", callback_data="Khiva")]
+        [InlineKeyboardButton(text="Zarafshon", callback_data="Zarafshan"), InlineKeyboardButton(text="Xiva", callback_data="Khiva")]
     ]
 )
 
 sozlamalar = InlineKeyboardMarkup(
     inline_keyboard=[
         [InlineKeyboardButton(text="📆 1 kunlik ma'lumot", callback_data="kun")],
-        [InlineKeyboardButton(text="📆 kunlik ma'lumot", callback_data="kunlik")],
+        [InlineKeyboardButton(text="📆 haftalik ma'lumot", callback_data="kunlik")],
         [InlineKeyboardButton(text="⚙️Sozlamalar", callback_data="sozlamalar")],
     ]
 )
